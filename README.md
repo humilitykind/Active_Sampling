@@ -53,7 +53,7 @@ The script implements a hybrid strategy that runs on every request:
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### 1. Requirements
 ```bash
