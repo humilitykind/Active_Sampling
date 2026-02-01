@@ -31,7 +31,7 @@ Our sampling strategy evolved in three distinct phases to address specific stati
 **The Solution:** We refined the exploration phase with two upgrades:
 1.  **Power-Law Selection (The "Student"):** Instead of a hard threshold, we pick candidates using **Inverse Probability Weighting** raised to a power (`alpha`).
     * `Weight = 1 / (votes + 1)^alpha`
-    * With `alpha=3`, a model with 10 votes is ~1000x more likely to be picked than one with 100 votes.
+    * With `alpha=2`, a model with 10 votes is ~100x more likely to be picked than one with 100 votes.
 2.  **Anchor Opponents (The "Teacher"):** When a new model ("Student") is picked, we force it to fight an **"Anchor"**—a model with the smallest CI (lowest variance).
     * **Result:** The "Student" is measured against a stable "Ruler," maximizing the signal regarding their true skill level.
 
