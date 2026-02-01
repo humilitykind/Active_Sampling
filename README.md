@@ -6,7 +6,7 @@ The goal is to **maximize information gain** per vote, ensuring the leaderboard 
 
 ---
 
-## 🧠 The Evolution of the Algorithm
+##  The Evolution of the Algorithm
 
 Our sampling strategy evolved in three distinct phases to address specific statistical challenges found in real-world leaderboards.
 
@@ -58,3 +58,15 @@ The script implements a hybrid strategy that runs on every request:
 ### 1. Requirements
 ```bash
 pip install pandas
+```
+
+### 2. Have Leaderboard ready as given CSV
+
+### 3. Run the python script
+```bash
+python code.py
+```
+
+---
+
+### The code outputs a list of matchups at a time , since we may need the priorities in advance, in case the scores are calculated in batches and not instantaneously. 
